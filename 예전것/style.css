@@ -1,0 +1,25 @@
+body {
+    background: url(/images/bg0.jpeg) no-repeat fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width:1524px) {
+    body {
+        background: url(/images/bg1.jpeg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background: url(/images/bg2.jpeg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background: url(/images/bg3.jpeg) no-repeat fixed;
+        background-size: cover;
+    }
+}

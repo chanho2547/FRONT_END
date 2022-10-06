@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad</title>
+    <style>
+       body {
+        background-color: coral;
+       }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 6px;
+            list-style-type: none;
+        }
+        input[type="text"], input[type="tel"], input[type="email"] {
+				width: 300px;
+        }
+        form > div > input[type="submit"], input[type="reset"] {
+            margin: 20px 10px;
+            width: 150px;
+            height: 40px;
+        }
+        form > div {
+            display: flex;
+            justify-content: center;
+        }
+        #shopping li label {
+            width: 80px;
+            float: left;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://google.co.kr">
+    <h1>아이패드 주문하기</h1>
+
+    <fieldset>
+        <legend>배송 정보</legend>
+       
+       <ul id="shopping">
+        <li>
+            <label for="info">주문상품</label>
+            <input type="text" readonly placeholder="아이패드 12.9인치">
+
+        </li>
+
+        <li>
+            <label for="name">이름</label>
+            <input type="text" autofocus>
+        </li>
+
+        <li>
+            <label for="addr">배송주소</label>
+            <input type="text">
+        </li>
+
+        <li>
+            <label for="email">이메일</label>
+            <input type="email">
+        </li>
+
+        <li>
+            <label for="tel" >연락처</label>
+            <input type="text" placeholder="하이픈 빼고 입력해 주세요">
+        </li>
+
+        <li>
+            <label for="delever">배송지정</label>
+            <input type="date">
+            (주문일로부터 최소 3일 이후)
+        </li>
+       </ul>
+
+    </fieldset>
+
+    <div>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+    </div>
+
+</form>
+</body>
+</html>

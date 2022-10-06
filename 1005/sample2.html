@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 500px;
+            margin : 40px auto;
+        }
+        #contents {
+            display: none;
+        }
+        button {
+            border-style: none;
+            border: 1px solid gray;
+            color: white;
+            background-color: #222;
+        }
+        img {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <img src="./잇지.jpeg" width="500px" >
+
+        <div id="contents" >
+            <h3>그룹 잇지</h3>
+            <p>팀명 'ITZY'는 '너희가 원하는 거 전부 있지? 있지!' 라는 뜻을 가지고 있으며, 
+                정식 한글 표기법은 있지이다. 혹 영어명인 'ITZY'로만 들어본 사람들이 한글로는 
+                어떻게 적는지 몰라 '잇지'라고 부르는 경우도 꽤 많이 있는데, '있지'라고 
+                불러야 한다며 정정해주는 것이 팬덤 믿지에게는 일상이 되었다</p>
+
+            <button>상세 설명 닫기</button>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        const imgEl = document.querySelector("img");
+        const ctsEl = document.querySelector("#contents");
+        const btnEl = document.querySelector("button");
+        imgEl.addEventListener("click",function() {
+            ctsEl.style.display = "inline";
+        });
+        btnEl.addEventListener("click",function(){
+            ctsEl.style.display = "none";
+        });
+
+    </script>
+</body>
+</html>

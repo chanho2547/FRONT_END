@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width : 5000px;
+            height: 5000px;
+        }
+        button {
+            position: fixed;
+            
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sTo()">scrollTo(100,200)</button>
+    <button onclick="sBy()">scrollBy(100,200)</button>
+    <script>
+        function sTo() {
+            window.scrollTo({left:100,top:200});
+        }
+        function sBy() {
+            window.scrollBy({left:100,top:200});
+        }
+    </script>
+</body>
+</html>
