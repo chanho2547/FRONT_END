@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #container {
+            margin: 90px auto;
+            width: 450px;
+            height: 600px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        ul, li {
+            list-style: none;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        ul {
+            float: right;
+            margin-right: 30px;
+        }
+        li {
+            margin-top : 20px;
+            
+        }
+        input {
+            border-style: none;
+            border-bottom: 2px dashed black;
+            background-color: whitesmoke    ;
+            height: 2rem;
+            text-align: center;
+            width: 230px;
+
+        }
+        h1 {
+            font-size: 20px;
+            display: inline;
+            float: left;
+        }
+        button {
+            width: 340px;
+            height: 80px;
+            font-weight: 800;
+            color:green;
+            background-color: rgb(167, 255, 167);
+            border-style: none;
+
+            margin: 20px auto;
+        }
+        p {
+        text-align: right;
+        font-size: 0.7em;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div id="container">
+            <ul>
+                <li><h1>아아디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><input type="text" id="id" required></li>
+                <p id="idMsg">&nbsp;</p>
+                <li><h1>패스워드&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><input type="text" id="password" required></li>
+                <p id="pwMsg">&nbsp;</p>
+                <li><h1>패스워드확인&nbsp;&nbsp;</h1><input type="text" id="password2" required></li>
+                <p id="pwMsg2">&nbsp;</p>
+                <li><h1>이메일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><input type="text" id="email" value="@" required></li>
+                <p id="emailMsg">&nbsp;</p>
+                <li><h1>주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;</h1><input type="text" id="addr" required></li>
+                <p id="addrMsg">&nbsp;</p>
+                <li><button submit>가 입</button></li>
+            </ul>
+        </div>
+    </form>
+    <script src="example.js"></script>
+</body>
+</html>

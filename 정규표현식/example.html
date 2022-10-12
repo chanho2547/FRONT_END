@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+
+
+            display: flex;
+            flex-direction: column;
+            margin: 40px auto;
+            width: 250px;
+
+        }
+        ::placeholder {
+            text-align: center;
+        }
+       
+        input {
+            
+           border: 3px solid gray;
+           border-radius: 5px;
+            text-align:center ;
+        }
+        button {
+            border: none;
+            background-color:lightsalmon;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 0px;
+            font-size: 0.4rem;
+            text-align: center;
+        }
+        li, ul {
+            margin-top: 30px;
+            list-style: none;
+
+        }
+        #join{
+           width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <div id="container">
+
+        <ul>
+            <li><input type="text" id="id" placeholder="아이디 입력"> <button id="idBtn" onclick="pushIdBtn()" >확인</button></li>
+            <p id="idMsg">&nbsp;</p>
+            <li><input type="text" id="password" placeholder="패스워드 입력"> <button id="pwdBtn" onclick="pushPwdBtn()" >확인</button></li>
+            <p id="pwdMsg">&nbsp;</p>
+            <li><input type="text" id="email" placeholder="이메일 입력"> <button id="emailBtn" onclick="pushEmailBtn()" >확인</button></li>
+            <p id="emailMsg">&nbsp;</p>
+            <li><input type="text" id="phone" placeholder="전화번호 입력"> <button id="phBtn" onclick="pushPhBtn()" >확인</button></li>
+            <p id="phMsg">&nbsp;</p>
+            <li><button id="join" onclick="join()">가입요청</button></li>
+        </ul>
+
+
+
+
+
+   
+
+        
+
+     
+    </div>
+    
+    
+    <script src="example.js"></script>
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
